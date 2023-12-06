@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
         'C': 100, 'D': 500, 'M': 1000
     }
     result = 0
-    prev_value = 0
+    old_value = 0
     for char in range(len(roman_string) - 1, -1, -1):
         current_value = roman_letters[roman_string[char]]
         if current_value >= old_value:
